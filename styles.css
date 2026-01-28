@@ -1,3 +1,5 @@
+/* small reset */
+
 *,
 ::before,
 ::after {
@@ -5,10 +7,10 @@
     margin: 0;
     box-sizing: border-box;
     font-size: 24px;
-    background-color: rgb(175, 221, 211);
+
 }
 
-/* font test will delete */
+/* fonts */
 
 @font-face {
     font-family: 'Gondola SD - Swash';
@@ -35,28 +37,97 @@
     font-style: normal;
     font-display: swap;
 }
+/* fonts */
 
-.gondola-test {
+/* imgs*/
+
+body {
+    display: flex;
+    width: 100vw;
+}
+
+
+.logo-text {
     font-family: 'Gondola SD - Swash';
+    font-size: 3rem;
+    color: whitesmoke;
+    padding-top: 1.6rem;
+
 }
 
-.roman-test {
-    font-family: 'Roman SD';
+
+.card-container {
+    flex: 2;
+    display: flex;
+    background-color: rgb(66, 66, 66, 0.1);
+    gap: 1rem;
+    border: 1px solid black;
+    
+
+    position: absolute;
+    top: 7rem;
+    left: 2rem;
 }
 
-.retroscape-test {
+.image-wrapper {
+    position: relative;
+}
+
+.trans-img {
+    width: 6rem;
+    height: 6rem;
+}
+
+/* main form content*/
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 3;
+    padding-left: 2rem;
+}
+
+.form-flexed {
+    border: 1px solid rgb(224, 22, 33);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60vw;
+    height: 10rem;
+}
+.left-form, .right-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 0.25rem;
+    padding: 0.2rem;
+    border: 3px dotted rgb(139, 5, 5);
+    height: 100%;
+    width: 100%;
+}
+
+.right-form {
+    padding-top: 1.6rem;
+}
+
+input {
+    width: 20vw;
+}
+
+.btn {
+    border-radius: 20ch;
+}
+
+.ok {
+    padding: 0 1rem;
+}
+
+/* middle section styles */
+
+label {
+    color: rgb(107, 111, 117);
     font-family: 'Retroscape';
+    font-size: 0.4rem;
 }
-
-
-.bigger {
-    font-size: 1.5rem;
-}
-.smaller {
-    font-size: 0.667rem;
-}
-
-div {
-    padding: 1rem;
-}
-/* just testing the waters */
