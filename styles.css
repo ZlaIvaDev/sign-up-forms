@@ -68,7 +68,6 @@ body {
 
     position: absolute;
     top: 7rem;
-    left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 
@@ -85,7 +84,18 @@ body {
     background-image: url('imgs/gary-scott-milky-way-from-yosemite-unsplash.avif');
 }
 
+.photo-contribution {
 
+    color: whitesmoke;
+    font-size: 0.66rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 14vw;
+}
+.copyright {
+    color: inherit;
+    font-size: inherit;
+}
 .trans-img {
     width: 6rem;
     height: 6rem;
