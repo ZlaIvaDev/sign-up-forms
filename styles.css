@@ -44,6 +44,7 @@
 body {
     display: flex;
     width: 100vw;
+    height: 100vh;
 }
 
 
@@ -57,21 +58,29 @@ body {
 
 
 .card-container {
-    flex: 2;
     display: flex;
-    background-color: rgb(66, 66, 66, 0.1);
+    /*border: 1px solid black;*/
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
-    border: 1px solid black;
     
 
     position: absolute;
     top: 7rem;
-    left: 2rem;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
 }
 
-.image-wrapper {
+.sidebar {
+    flex: 2;
     position: relative;
+    /*height: 100vh;*/
+    background-image: url('imgs/gary-scott-milky-way-from-yosemite-unsplash.avif');
 }
+
 
 .trans-img {
     width: 6rem;
@@ -80,21 +89,47 @@ body {
 
 /* main form content*/
 
+.login-content,.text-content,.left-form {
+    padding-left: 4rem;
+}
+
+.text-content {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    margin-right: 15rem;
+    
+}
+p {
+    line-height: 32px;
+    margin-bottom: 1rem;
+}
+p.signup-text {
+    margin-top: -1rem;
+}
+
+
 .main-content {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     flex: 3;
-    padding-left: 2rem;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: baseline;
+
+    /*padding-left: 4rem;*/
+    /*height: 100vh;*/
+    border: 1px solid black;
+
 }
 
 .form-flexed {
-    border: 1px solid rgb(224, 22, 33);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 60vw;
     height: 10rem;
+
+    box-shadow: 5px 5px 19px 1px rgba(49, 207, 168, 0.2);
 }
 .left-form, .right-form {
     display: flex;
@@ -102,28 +137,33 @@ body {
     justify-content: center;
     flex: 1;
     gap: 0.25rem;
-    padding: 0.2rem;
-    border: 3px dotted rgb(139, 5, 5);
-    height: 100%;
-    width: 100%;
 }
 
 .right-form {
-    padding-top: 1.6rem;
+    padding-top: 1.4rem;
+    margin-left: -20rem;
 }
 
 input {
-    width: 20vw;
+    width: 11rem;
 }
 
 .btn {
     border-radius: 20ch;
+    background-color: #2b9672;
+    padding: 0.12rem 1.25rem;
+    color: whitesmoke;
+    margin-bottom: 1rem;
 }
 
-.ok {
-    padding: 0 1rem;
+a {
+    color: #2b9672;
+    text-decoration: none;
+    font-weight: 700;
 }
-
+.login-content {
+    padding-top: 1.5rem;
+}
 /* middle section styles */
 
 label {
