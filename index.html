@@ -26,23 +26,23 @@
         </div>
 
         <div class="sign-up-container">
-            <form action="#" class="form-flexed">
+            <form action="#" class="form-flexed" method="get">
                 <div class="left-form">
                     <h1>Let's do this!</h1>
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="first-name" id="first-name">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                    <input type="text" name="first-name" id="first-name" required placeholder="Chriss">
+                    <label for="email" >EMAIL</label>
+                    <input type="email" name="email" id="email" required placeholder="example@mail.com">
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required minlength="8" placeholder="ex: 12345678">
                 </div>
                 <div class="right-form">
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name">
+                    <input type="text" name="last-name" id="last-name" placeholder="Kiss">
                     <label for="phone-num">PHONE NUMBER</label>
-                    <input type="text" name="phone-num" id="phone-num">
+                    <input type="text" name="phone-num" id="phone-num" pattern="^\d{3}-\d{4}-\d{4}$" placeholder="090-1234-1234">
                     <label for="confirm-pass">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-pass" id="confirm-pass">
+                    <input type="password" name="confirm-pass" id="confirm-pass" required minlength="8" placeholder="ex: 12345678">
                 </div>
             </form>
             
